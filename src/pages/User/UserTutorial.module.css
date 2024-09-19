@@ -1,0 +1,63 @@
+.user-tut-page {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #bbe9ff;
+  background-size: contain;
+  display: flex;
+  position: relative;
+}
+.sidebar-toggle {
+  border: solid 1px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgb(166, 255, 0);
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 1.5rem;
+  padding: 0px 1rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: position;
+}
+.sidebar-toggle:active {
+  background-color: black;
+  color: white;
+}
+
+.sidebar-con {
+  z-index: 9;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  padding-top: 4.5em;
+  display: block;
+  width: 60%;
+}
+.section-con {
+  padding: 4.5rem 0.5rem 0px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 576px) {
+  .sidebar-con {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;
+    height: 95vh;
+    position: sticky;
+    top: 0px;
+    width: 23%;
+  }
+  .section-con {
+    padding: 4.5rem 0px 0px;
+    width: 55%;
+    min-height: 100vh;
+  }
+  .sidebar-toggle {
+    display: none;
+  }
+}

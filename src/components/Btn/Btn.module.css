@@ -1,0 +1,17 @@
+.btn {
+  font-size: 1.15rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+.btn:hover {
+  background-color: #faff95;
+  color: black;
+}
+.btn-Active {
+  background-color: #faff95;
+  color: black;
+}

@@ -1,0 +1,25 @@
+.admin-tut-page {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #bbe9ff;
+  background-size: contain;
+  display: flex;
+  position: relative;
+}
+
+.sidebar-con {
+  padding-top: 4.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: block;
+  height: 95vh;
+  position: sticky;
+  top: 0px;
+  width: 23%;
+}
+.section-con {
+  padding: 4.5rem 0px 0px;
+  width: 55%;
+  min-height: 100vh;
+}

@@ -1,0 +1,51 @@
+.add-topic-model {
+  background: rgba(0, 0, 0, 0.892);
+  z-index: 20;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(10%);
+}
+.add-topic-model-main {
+  width: 30%;
+  height: 20%;
+  background-color: #ffeb3b;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  animation: openWindow 0.2s ease-in;
+}
+.add-topic-model-main > label {
+  margin: 1rem;
+}
+.add-topic-model-main > input[type="text"] {
+  margin: 1rem 0.5rem;
+  width: 60%;
+}
+.add-topic-model-main > input[type="text"]:focus {
+  outline: none;
+}
+.create-btn {
+  cursor: pointer;
+  width: fit-content;
+  background-color: #1fc145;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px black;
+}
+.create-btn:active {
+  background-color: #0d521d;
+}
+@keyframes openWindow {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

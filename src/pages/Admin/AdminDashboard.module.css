@@ -1,0 +1,115 @@
+.admin-dashboard {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-top: solid 0.1px;
+  background-color: #a7a7a7;
+  width: 100%;
+}
+.dash-main-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+.searchbar-con {
+  width: 60%;
+}
+.admin-tut-con {
+  background-color: rgb(225, 225, 225);
+  width: 90%;
+  margin: 4rem 0px;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px black;
+  display: flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  height: 100vh;
+}
+
+.tut-name-card {
+  position: relative;
+  text-transform: capitalize;
+  padding: 3rem;
+  background-color: #faff95;
+  height: fit-content;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: inherit;
+}
+.tut-name-card:hover .tut-edit-btn,
+.tut-name-card:hover .tut-del-btn {
+  opacity: 1;
+}
+.tut-name-card > div {
+  font-size: 1.5rem;
+}
+
+.status-indicator {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+}
+.status-indicator-active {
+  background-color: #4caf50;
+}
+.tut-edit-btn {
+  opacity: 0;
+  transition: 0.4s opacity;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  width: max-content;
+  position: absolute;
+
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem !important;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.tut-edit-btn > img {
+  height: 1rem;
+}
+.tut-edit-btn:active {
+  background-color: rgb(95, 95, 95);
+}
+.tut-del-btn {
+  opacity: 0;
+  transition: 0.4s opacity;
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  width: max-content;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1rem !important;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px black;
+}
+.tut-del-btn:active {
+  background-color: rgb(110, 0, 0);
+}
+.logout-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #000000;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.logout-btn:active {
+  background-color: #474747;
+}

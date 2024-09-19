@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 3vw;
+}
+.mainWebText {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 1.25vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 1.25vw !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1.25vw !important;
+  }
+}

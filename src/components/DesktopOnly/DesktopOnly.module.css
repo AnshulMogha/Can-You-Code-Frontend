@@ -1,0 +1,30 @@
+/* DesktopOnlyMessage.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #00000093;
+  padding: 20px;
+}
+
+.messageBox {
+  text-align: center;
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.618);
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #faff95;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1.6;
+}

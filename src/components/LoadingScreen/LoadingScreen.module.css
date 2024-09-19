@@ -1,0 +1,102 @@
+/* Keyframes for spinning the loading spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinAnti {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Keyframes for dot animation */
+@keyframes dotAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Styling for the loading spinner */
+.loading-spinner {
+  border: 4px solid #070707; /* Dark grey */
+  border-top: 4px solid #faff95; /* Yellow */
+  border-bottom: 4px solid #faff95; /* Yellow */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.5s linear infinite;
+  background-color: #070707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-img {
+  animation: spinAnti 1.5s linear infinite;
+  height: 35px;
+}
+
+/* Styling for the loading screen container */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0);
+  z-index: 9999;
+}
+
+/* Styling for the loading icon text */
+.loading-icon {
+  color: white;
+  margin: 0.5rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+/* Styling for each dot in the animation */
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background-color: white;
+  border-radius: 30%;
+  margin: 0 0.2rem;
+  opacity: 0; /* Start hidden */
+  animation: dotAnimation 3s linear infinite;
+}
+
+/* Dot 1 */
+.dot-first {
+  animation-delay: 0s;
+}
+
+/* Dot 2 */
+.dot-second {
+  animation-delay: 0.5s;
+}
+
+/* Dot 3 */
+.dot-third {
+  animation-delay: 1s;
+}

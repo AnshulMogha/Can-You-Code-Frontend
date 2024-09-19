@@ -1,0 +1,88 @@
+.main {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: linear-gradient(to bottom right, #bbe9ff, #faff95);
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  max-width: 250px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-form > h1 {
+  color: #484848;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-form > form {
+  width: 100%;
+}
+
+.login-form > form > input[type="text"],
+.login-form > form > input[type="email"],
+.login-form > form > input[type="password"] {
+  display: block;
+  outline: none;
+  border: solid grey 2px;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.login-form > form > input[type="text"]:focus,
+.login-form > form > input[type="email"]:focus,
+.login-form > form > input[type="password"]:focus {
+  border: solid rgb(0, 0, 0) 2px;
+}
+
+.show-pass-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.show-pass-btn > input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.login-btn {
+  background-color: #0b847a;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  text-align: center;
+}
+
+.login-btn:hover {
+  background-color: #0a7366;
+}
+
+.login-btn:active {
+  background-color: #0b847ab2;
+}

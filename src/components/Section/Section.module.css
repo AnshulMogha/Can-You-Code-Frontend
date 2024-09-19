@@ -1,0 +1,120 @@
+.section {
+}
+.section-main {
+  color: white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  border: solid 0.1px;
+}
+.navigation-btn {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-top > h1 {
+  /* background-color: #faff94;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0px 0px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center; */
+  background-color: #faff94;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem;
+  text-transform: capitalize;
+}
+.navigation-btn div {
+  font-size: 1.15rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  outline: solid #faff94;
+}
+.navigation-btn div:hover {
+  background-color: #faff94;
+  color: black;
+  outline: none;
+}
+.navigation-btn div:active {
+  background-color: #faff9486;
+  color: black;
+  outline: none;
+}
+.text-editor {
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 0px 0px 0.5rem 0.5rem;
+  color: black;
+}
+.inputfield {
+  height: 4rem;
+  margin: 1rem;
+  width: 100%;
+}
+.inputfield > label {
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.8rem 0px;
+}
+.inputfield > input[type="text"] {
+  width: 91%;
+  height: 50%;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgb(184, 184, 184);
+  float: left;
+  font-size: 1.25rem;
+  color: black;
+  padding: 0.2rem;
+  text-transform: capitalize;
+  /* box-shadow: 1px 1px 5px rgb(255, 255, 255); */
+}
+.inputfield > input[type="text"]:focus {
+  outline: none;
+}
+.inputfield > span {
+  display: inline-block;
+  background-color: black;
+  height: fit-content;
+  height: 50%;
+  padding: 0.5em;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+.inputfield > span > img {
+  height: 100%;
+}
+.focus {
+  background-color: #ffffff !important;
+}
+.save-btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 15%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.save-btn:hover {
+  background-color: #1fc145;
+  color: rgb(0, 0, 0);
+  outline: solid black 0.1px;
+  box-shadow: 1px 1px 10px black;
+}

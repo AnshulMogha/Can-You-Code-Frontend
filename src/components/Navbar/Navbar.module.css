@@ -1,0 +1,29 @@
+.navbar {
+  /* background-color: rgb(0, 0, 0); */
+  width: 100vw;
+  display: flex;
+  height: 3.5rem;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  box-shadow: 0px 5px 10px black;
+  z-index: 15;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 3rem;
+  text-transform: capitalize;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.navbar-logo,
+.navbar-logo img {
+  cursor: pointer;
+  height: inherit;
+}
+.active-tut {
+  background-color: #faff95 !important;
+  color: black !important;
+  border-radius: 0.5rem;
+}

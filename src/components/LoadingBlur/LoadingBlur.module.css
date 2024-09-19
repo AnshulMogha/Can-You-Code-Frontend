@@ -1,0 +1,39 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  animation: opacityFade 2s infinite ease-in-out;
+}
+
+.loading-animation {
+  border-radius: 50%;
+  animation: blurFade 2s infinite ease-in-out;
+}
+.loading-animation > img {
+  height: 6rem;
+}
+
+@keyframes blurFade {
+  0%,
+  100% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(2.5px);
+  }
+}
+@keyframes opacityFade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}

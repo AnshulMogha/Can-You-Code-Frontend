@@ -1,0 +1,139 @@
+.home-page {
+  width: 100%;
+  background-color: black;
+}
+.home-top-con {
+  width: inherit;
+  height: 50rem;
+  background: url("/Images/background-main.jpg") center;
+  background-size: cover;
+  box-shadow: 0px -4rem 3rem black inset;
+  position: relative;
+}
+.top-con-content {
+  height: max-content;
+  color: white;
+  position: absolute;
+  top: 17.25rem;
+  left: 1rem;
+}
+.top-con-content div {
+  width: max-content;
+  font-size: 4.25rem;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.top-con-content p {
+  text-wrap: wrap;
+  width: 85%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #faff95;
+}
+.searchbar-con {
+  position: absolute;
+  top: 33rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25rem;
+}
+.searchbar-style {
+  background-color: white;
+}
+.search-res-con {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  max-height: 15rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.searched-items {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-top: solid 1px black;
+  padding: 0.5rem;
+}
+.searched-items div {
+  text-transform: capitalize;
+  cursor: pointer;
+  width: max-content;
+  background-color: black;
+  color: #faff95;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.searched-itemsdiv {
+  cursor: pointer;
+  width: max-content;
+}
+
+.home-tut-con {
+  margin: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: url("/Images/background.jpg") repeat;
+  background-size: contain;
+  border-radius: 1rem;
+  border: 0.1px solid;
+}
+.home-tut-con > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  row-gap: 5rem;
+}
+.tut-con-heading {
+  background-color: #faff95;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 90%;
+  transform: skewX(-25deg);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 2rem;
+}
+
+.tut-con-heading > h1 {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  font-weight: 400;
+  transform: skewX(25deg);
+}
+
+@media screen and (min-width: 576px) {
+  .home-tut-con > div:nth-child(2) {
+    grid-template-columns: auto auto;
+  }
+  .top-con-content div {
+    font-size: 8rem;
+    font-weight: 400;
+  }
+  .top-con-content p {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .top-con-content {
+    top: 13rem;
+    left: 7rem;
+  }
+  .home-tut-con {
+    margin: 3rem;
+  }
+  .tut-con-heading {
+    background-color: #faff95;
+    margin: 3rem;
+    width: 50%;
+    transform: skewX(-25deg);
+  }
+  .searchbar-con {
+    width: 45rem;
+  }
+}
